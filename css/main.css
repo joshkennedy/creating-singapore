@@ -1,4 +1,62 @@
 @import url(http://fonts.googleapis.com/css?family=Lato:300,400,700italic);
+@font-face {
+  font-family: 'fontello';
+  src: url("font/fontello.eot?99746043");
+  src: url("font/fontello.eot?99746043#iefix") format('embedded-opentype'), url("font/fontello.woff?99746043") format('woff'), url("font/fontello.ttf?99746043") format('truetype'), url("font/fontello.svg?99746043#fontello") format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+
+[class^="icon-"]:before,
+[class*=" icon-"]:before {
+  font-family: 'fontello';
+  font-style: normal;
+  font-weight: normal;
+  speak: none;
+  display: inline-block;
+  text-decoration: inherit;
+  width: 1em;
+  margin-right: 0.2em;
+  text-align: center;
+  opacity .8;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1em;
+  margin-left: 0.2em;
+  text-shadow:  0 1px 1px rgba(255,255,255,1);
+}
+
+.icon-dribbble:before { content: '\44'; } /* 'D' */
+.icon-dribbble:hover { color: #ea4c89; }
+.icon-twitter:before { content: '\54'; } /* 'T' */
+.icon-twitter:hover { color: #00aced; }
+.icon-fivehundredpx:before { content: '\35'; } /* '5' */
+.icon-fivehundredpx:hover { color: #00AEEF; }
+.icon-github:before { content: '\47'; } /* 'G' */
+.icon-github:hover { color: #333332; }
+.icon-instagram:before { content: '\49'; } /* 'I' */
+.icon-instagram:hover { color: #FD324F; }
+.icon-behance:before { content: '\42'; } /* 'B' */
+.icon-behance:hover { color: #1769ff; }
+.icon-search:before { content: '\53'; } /* 'S' */
+
+[class^="icon-"], [class*=" icon-"],
+[class^="icon-"]:hover, [class*=" icon-"]:hover, a, a:hover {
+  -webkit-transition: all .3s ease;
+  -moz-transition: all .3s ease;
+  -o-transition: all .3s ease;
+  -ms-transition: all .3s ease;
+  transition: all .3s ease;
+}
+
+/* IE7 HACKS */
+.icon-fivehundredpx { *zoom: expression( this.runtimeStyle['zoom'] = '1', this.innerHTML = '&#x35;&nbsp;'); }
+.icon-dribbble { *zoom: expression( this.runtimeStyle['zoom'] = '1', this.innerHTML = '&#x44;&nbsp;'); }
+.icon-twitter { *zoom: expression( this.runtimeStyle['zoom'] = '1', this.innerHTML = '&#x54;&nbsp;'); }
+.icon-github { *zoom: expression( this.runtimeStyle['zoom'] = '1', this.innerHTML = '&#x47;&nbsp;'); }
+.icon-instagram { *zoom: expression( this.runtimeStyle['zoom'] = '1', this.innerHTML = '&#x49;&nbsp;'); }
+.icon-behance { *zoom: expression( this.runtimeStyle['zoom'] = '1', this.innerHTML = '&#x42;&nbsp;'); }
+.icon-search { *zoom: expression( this.runtimeStyle['zoom'] = '1', this.innerHTML = '&#x53;&nbsp;'); }
 
 body {
   font-family: 'Lato', sans-serif;
@@ -7,13 +65,12 @@ body {
   line-height: 24px;
   color: #333333;
 }
-
 a {
   color: #9FC363;
   text-decoration: none;
 }
 a:hover {
-  text-decoration: underline;
+  color: #999999;
 }
 
 header {
@@ -42,8 +99,175 @@ header p {
   font-weight: 300;
   font-size: 28px;
   color: #999999;
+  text-shadow: 0px 1px 0 #FFF;
 }
 .invite h3 a {
   color: #9FC363;
   margin-left: 15px;
 }
+.invite h3 a:hover { color: #999999; }
+
+.members {
+  width: 780px;
+  margin: 30px auto 30px;
+}
+.members h4 {
+  text-align: center;
+  margin: 60px 0;
+  font-size: 24px;
+  font-weight: 300;
+  color: #999999;
+  font-style: italic;
+}
+.members:after {
+  content: '';
+  display: table;
+  clear: both;
+}
+
+.card {
+  width: 240px;
+  height: 330px;
+  border-radius: 4px;
+  overflow: hidden;
+  background: #F9F9F9;
+  border: 1px solid #DCDCDC;
+  box-shadow: 0 1px 3px rgba(0,0,0,.10);
+  float: left;
+  margin: 0 25px 30px 0;
+  position: relative;
+}
+.card:nth-of-type(3n+3) { margin-right: 0; }
+.card figure img {
+  height: 250px;
+}
+.card figure .overlay {
+  display: block;
+  height: 250px;
+  width: 240px;
+  position: absolute;
+  top: 0;
+  z-index: 50;
+  opacity: 0;
+  font-size: 48px;
+  text-align: center;
+  line-height: 250px;
+  color: #FFFFFF;
+}
+.card figure .overlay:hover {
+  background: rgba(255,255,255,.45);
+  opacity: 1;
+}
+.card h2, .card p {
+  line-height: 100%;
+  margin: 0;
+  text-align: center;
+  font-weight: 300;
+}
+.card h2 {
+  font-size: 18px;
+  margin-bottom: 5px;
+}
+.card p {
+  color: #BBBBBB;
+  font-size: 14px;
+}
+.card-links {
+  width: 240px;
+  padding: 0;
+  margin: 5px 0 0;
+  list-style: none;
+  text-align: center;
+}
+.card-links li {
+  padding: 0;
+  margin: 0;
+  display: inline;
+}
+.card-links li a {
+  color: #DCDCDC;
+}
+
+#request {
+  display: none;
+  width: 550px;
+  height: auto;
+  border-radius: 4px;
+  background: #F9F9F9;
+  border: 1px solid #DCDCDC;
+  box-shadow: 0 0px 15px rgba(0,0,0,.40);
+  box-sizing: border-box;
+  padding: 15px 45px;
+}
+#request .close {
+  position: absolute;
+  top: 10px;
+  right: 15px;
+  color: #DCDCDC;
+}
+#request .close:hover {
+  color: #999999;
+  cursor: pointer;
+}
+#request h2 + p {
+  font-weight: 700;
+}
+#request > p {
+  font-weight: 300;
+}
+#request .tweet-at-me {
+  display: block;
+  background: #00aced;
+  padding: 7px 25px;
+  line-height: 35px;
+  height: 35px;
+  font-weight: normal;
+  color: #FFF;
+  border-radius: 3px;
+  position: absolute;
+  bottom: 25px;
+  right: 25px;
+}
+#request .tweet-at-me:hover {
+  background: #02A2CF;
+}
+#request .tweet-at-me .icon-twitter {
+  text-shadow: none;
+  margin-right: 10px;
+}
+
+#lean_overlay {
+  position: fixed;
+  z-index: 100;
+  top: 0px;
+  left: 0px;
+  height: 100%;
+  width: 100%;
+  background: #000;
+  display: none;
+}
+
+footer {
+  background: #7CA350;
+  padding: 15px;
+}
+footer p {
+  width: 760px;
+  padding: 0;
+  margin: 0;
+  margin: 0 auto;
+  color: #FFFFFF;
+  font-weight: 300;
+  font-size: .8em;
+}
+footer p a {
+  color: #333332;
+  font-weight: 700;
+}
+footer p a:hover {
+  color: #FFFFFF;
+}
+
+
+/* Responsive Styles */
+

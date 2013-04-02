@@ -16,29 +16,130 @@
   <script src="js/vendor/modernizr-2.6.2-respond-1.1.0.min.js"></script>
 </head>
 <body>
-    <!--[if lt IE 7]>
-      <p class="chromeframe">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> or <a href="http://www.google.com/chromeframe/?redirect=true">activate Google Chrome Frame</a> to improve your experience.</p>
-    <![endif]-->
 
     <header>
       <h1>Creating Singapore</h1>
       <p>Connecting Singapore's creative community</p>
     </header>
 
+    <section class="members">
+      <h4>Designers, developers, artists. We create Singapore.</h4>
+      <article class="card">
+        <figure>
+          <img src="img/joshkennedy.jpg" alt="Josh Kennedy">
+          <a href="http://joshkennedy.me" class="overlay" target="_blank"><i class="icon-search"></i></a>
+        </figure>
+        <h2>Josh Kennedy</h2>
+        <p>Web &amp; UI/UX Designer</p>
+        <ul class="card-links">
+          <li><a href="http://dribbble.com/joshkennedy" target="_blank"><i class="icon-dribbble"></i></a></li>
+          <li><a href="http://twitter.com/joshkennedy" target="_blank"><i class="icon-twitter"></i></a></li>
+          <li><a href="http://instagram.com/jshknndy" target="_blank"><i class="icon-instagram"></i></a></li>
+          <li><a href="http://github.com/joshkennedy" target="_blank"><i class="icon-github"></i></a></li>
+        </ul>
+      </article>
+      <article class="card">
+        <figure>
+          <img src="img/markelim.jpg" alt="Mark Lim">
+          <a href="http://www.marklim.net" class="overlay" target="_blank"><i class="icon-search"></i></a>
+        </figure>
+        <h2>Mark Lim</h2>
+        <p>Animator &amp; Illustrator</p>
+        <ul class="card-links">
+          <li><a href="http://dribbble.com/markelim" target="_blank"><i class="icon-dribbble"></i></a></li>
+          <li><a href="http://twitter.com/markelim" target="_blank"><i class="icon-twitter"></i></a></li>
+        </ul>
+      </article>
+      <article class="card">
+        <figure>
+          <img src="img/isnav.jpg" alt="Navjot Pawera">
+          <a href="http://www.navjotpawera.com" class="overlay" target="_blank"><i class="icon-search"></i></a>
+        </figure>
+        <h2>Navjot Pawera</h2>
+        <p>Designer</p>
+        <ul class="card-links">
+          <li><a href="http://dribbble.com/isnav" target="_blank"><i class="icon-dribbble"></i></a></li>
+          <li><a href="http://twitter.com/isnav" target="_blank"><i class="icon-twitter"></i></a></li>
+        </ul>
+      </article>
+      <article class="card">
+        <figure>
+          <img src="img/marvinsum.jpg" alt="Marvin Sum">
+          <a href="http://marvinsum.com" class="overlay" target="_blank"><i class="icon-search"></i></a>
+        </figure>
+        <h2>Marvin Sum</h2>
+        <p>Mobile &amp; Web Designer</p>
+        <ul class="card-links">
+          <li><a href="http://dribbble.com/marvinsum" target="_blank"><i class="icon-dribbble"></i></a></li>
+          <li><a href="http://twitter.com/marvinsum" target="_blank"><i class="icon-twitter"></i></a></li>
+          <li><a href="http://instagram.com/marvinsum" target="_blank"><i class="icon-instagram"></i></a></li>
+        </ul>
+      </article>
+      <article class="card">
+        <figure>
+          <img src="img/nicoletay.jpg" alt="Nicole Tay">
+          <a href="http://sg.linkedin.com/in/nicoletay" class="overlay" target="_blank"><i class="icon-search"></i></a>
+        </figure>
+        <h2>Nicole Tay</h2>
+        <p>UI/UX Designer</p>
+        <ul class="card-links">
+          <li><a href="http://dribbble.com/nicouze" target="_blank"><i class="icon-dribbble"></i></a></li>
+          <li><a href="http://twitter.com/nicouze" target="_blank"><i class="icon-twitter"></i></a></li>
+        </ul>
+      </article>
+      <article class="card">
+        <figure>
+          <img src="img/alfredyeo.jpg" alt="Alfred Yeo">
+          <a href="http://www.alfredoodles.daportfolio.com/" class="overlay" target="_blank"><i class="icon-search"></i></a>
+        </figure>
+        <h2>Alfred Yeo</h2>
+        <p>Artist/Illustrator</p>
+        <ul class="card-links">
+          <li><a href="http://dribbble.com/alfredoodles" target="_blank"><i class="icon-dribbble"></i></a></li>
+          <li><a href="http://twitter.com/alfredoodles" target="_blank"><i class="icon-twitter"></i></a></li>
+        </ul>
+      </article>
+<!--       <article class="card">
+        <figure>
+          <img src="img/you.jpg" alt="Your Face Here">
+        </figure>
+        <h2>Get listed!</h2>
+        <p><a href="#request" rel="modal">Send a request</a></p>
+        <p>Your future awaits...</p>
+      </article> -->
+    </section>
+
     <aside class="invite">
-      <h3>Want to be added to this list? <a href="#">Request an invite</a></h3>
+      <h3>Want to be added to this list? <a href="#request" rel="modal">Request an invite</a></h3>
     </aside>
+
+    <div id="request">
+      <span class="close">X</span>
+      <h2>Hey there!</h2>
+      <p>Thanks for your interest in being part of Creating Singapore!</p>
+      <p>If you're a designer, developer or professional artist currently living and working in Singapore, you belong on here!</p>
+      <p>This resource was hand-crafted here in Singapore, fueled by spare change and coffee. If you'd like to get your mug on here, shoot me a tweet and I'll add you to the list.</p>
+      <p>Thanks!</p>
+      <p>Josh Kennedy</p>
+      <a href="http://twitter.com/share?text=Hey%20@joshkennedy,%20I%20want%20to%20be%20added%20to&hashtags=CreatingSingapore&url=http://creatingsingapore.com" target="_blank" class="tweet-at-me"><i class="icon-twitter"></i> Tweet At Me</a>
+    </div>
+
+    <footer>
+      <p>Pixel-whipped by <a href="http://joshkennedy.me/">Josh Kennedy</a></p>
+    </footer>
 
     <script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
     <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.9.1.min.js"><\/script>')</script>
-
     <script src="js/plugins.js"></script>
+    <script src="js/main.js"></script>
 
     <script>
-      var _gaq=[['_setAccount','UA-XXXXX-X'],['_trackPageview']];
-      (function(d,t){var g=d.createElement(t),s=d.getElementsByTagName(t)[0];
-      g.src=('https:'==location.protocol?'//ssl':'//www')+'.google-analytics.com/ga.js';
-      s.parentNode.insertBefore(g,s)}(document,'script'));
+      (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+      (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+      m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+      })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+      ga('create', 'UA-7422463-15', 'creatingsingapore.com');
+      ga('send', 'pageview');
     </script>
   </body>
 </html>
